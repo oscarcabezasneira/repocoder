@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- inicia nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   		<div class="container-fluid">
     		<a class="navbar-brand" href="index.html">Agencia LatteMedia</a>
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +47,10 @@
   		</div>
 	</div>
 	<!-- ends banner -->
-	<main class="d-flex justify-content-between">	
+	<main>	
 		<section class="py-3">
-			<div class="container-fluid row">	
-				<article class="col-sm-12 col-md-6 col-lg-6">
+			<div class="container-fluid row parrafo">	
+				<article class="col-sm-12 col-md-8 col-lg-8">
 					<h1>Tenemos el compromiso y el profesionalismo</h1>
 					<p>Entendemos el gran problema que se produce al externalizar un servicio con un tercero. En GrupoAVC, hemos visto infinitos casos de clientes que han contratado empresas y estas o no han concluido con su trabajo o peor aún, se han retirado sin entregar nada. Es por esto que nuestro compromiso con el cliente será que él siempre está primero en la lista y que haremos todo lo que esté a nuestro alcance para entregarle el mejor servicio que podamos. Nuestra transparencia parte desde el minuto en que lees este mensaje, pudiendo entrar a ver quién es parte de nuestro equipo y contactar a cualquiera de nosotros de manera individual para saber de nuestros perfiles. En AVC, no queremos ser "una empresa más" en el rubro, si no que buscamos ser un aliado de quienes trabajan con nosotros.</p>
 					<p>Para ser de GrupoAVC, y poder tomar un proyecto, cualquiera del equipo debe contar con a lo menos una especialización fuera de lo que fue su carrera inicial con el fin de asegurar la actualización del conocimiento y que esta al nivel de poder asistir a nuestro cliente de la mejor manera posible.</p>
@@ -60,40 +60,52 @@
 <!-- ends paragraph -->
 		<section class="py-3">
 			<div class="container-fluid row">	
-				<div class="col-sm-12 col-md-6 col-lg-6">
-					<img class="w-100 d-block anim-rotate" src="img/equipo.jpg" alt="Imagen de equipo donde se muestra el trabajo que se realiza en GrupoAVC">
-				</div>
+				<article class="col-sm-12 col-md-4 col-lg-4 logoavc">
+					<img class="w-100 d-block" src="img/equipo.jpg" alt="Imagen de equipo donde se muestra el trabajo que se realiza en GrupoAVC">
+				</article>
 			</div>
 		</section>
 		<!-- ends image -->
-	</main>	
-	<div id="formulario">
-		<section class="formulario">
-			<h2>Contáctanos</h2>
-			<form action="">
-				<label for="nombre">Nombre:</label>
-				<input class="input" type="text" id="nombre" placeholder="Nombre" required>
-				<label for="apellido">Apellido:</label>
-				<input class="input" type="text" id="apellido" placeholder="Apellido" required>
-				<label for="email">Email:</label>
-				<input class="input" type="email" id="email" placeholder="ejemplo@mail.com" required>
-				<label for="telefono">Teléfono:</label>
-				<input class="input" type="tel" id="telefono" placeholder="+56 9 XXXX XXXX" required>
-				<fieldset>
-					<legend>¿Cómo quieres que te contactemos?</legend>
-					<label for="llamada">Quiero que me llamen</label>
-					<input type="radio" id="llamada" value="telefono" name="contacto">
-					<br>
-					<label for="mail">Quiero que me envíen un mail</label>
-					<input type="radio" id="mail" value="email" name="contacto">
-				</fieldset>
-				<label for="mensaje">Deje su mensaje</label>
-				<textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-				<button class="button_form_home">Enviar</button>
-			</form>
-		</section>
-		<!-- ends form -->
-	</div>
+	</main>
+	<form class="formulario_page_contacto">
+		<h2>Contáctanos</h2>
+		<div class="row mb-3">
+    		<label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+    			<div class="col-sm-10">
+      				<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+    			</div>
+  		</div>
+  		<div class="row mb-3">
+    		<label for="email" class="col-sm-2 col-form-label">Correo electrónico</label>
+    			<div class="col-sm-10">
+      				<input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+    			</div>
+  		</div>
+  		<div class="row mb-3">
+    		<label for="telefono" class="col-sm-2 col-form-label">Teléfono</label>
+    			<div class="col-sm-10">
+      				<input type="tel" class="form-control" id="telefono" placeholder="+56 9 XXXX XXXX" required>
+    			</div>
+  		</div>
+	  	<fieldset class="row mb-3">
+	    	<legend class="col-form-label col-sm-2 pt-0">¿Cómo quieres que te contactemos?</legend>
+	    		<div class="col-sm-10">
+	      			<div class="form-check">
+	        			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+	        			<label class="form-check-label" for="gridRadios1">Correo electrónico</label>
+	      			</div>	
+	      			<div class="form-check">
+	        			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+	        			<label class="form-check-label" for="gridRadios2">Teléfono</label>
+	      			</div>
+	    		</div>
+		</fieldset>
+	  	<div class="row mb-3">
+  			<label for="mensaje" class="form-label">Mensaje</label>
+  			<textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba algún comentario aquí..."></textarea>
+	  	</div>
+  		<button type="submit" class="btn btn-css">Enviar</button>
+	</form>
 	<br>
 	<footer> </footer>
 	<!-- Option 1: Bootstrap Bundle with Popper -->

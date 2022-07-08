@@ -1,23 +1,245 @@
-/* *{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 }
 
-html{
-	font-size: 62.5%;
-}
-
 h1,h2,h3{
 	text-transform: uppercase;
+	color: darkgreen;
 }
 
-body{
-	font-size: 1.7rem;
+.parrafo_home{
+	background-color: white;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin: 60px auto;
+	padding: 10px 20px;
+	border: double black;
+	overflow-x: auto;
+}
+
+.logoavc{
+	width: auto; height: 700px;
+}
+
+.btn-css{
+	color: white;
+	background-color: darkgreen;
+}
+/*.logosrrss{
+	width: 50px; height: 50px;
+}
+
+.footer{
+	background-color: black;
+}*/
+
+/*APLICA PARA TODOS LOS PÁRRAFOS (home, nosotros y servicios), POR AHORA...*/
+.parrafo{
+	text-align: left;
+	width: 50%;
+	height: auto;
+	margin: 60px auto;
+	padding: 10px 20px;
+}
+
+/* ----- PAGE NOSOTROS ----- */
+.h1-page-nosotros{
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ----- PAGE SERVICIOS ----- */
+.h1-page-servicios{
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.video_ejemplo{
+	/*margin: 60px 300px;
+	padding: 10px 20px;*/
+}
+
+.lista_servicios{
+	text-align: left;
+	width: 50%;
+	height: auto;
+	margin: 60px auto;
+	padding: 10px 20px;
+}
+
+
+/* ----- PAGE CLIENTES ----- */
+.h1-page-clientes{
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-page-clientes{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+
+#clientes .galeria{
+	margin: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+	#clientes .galeria figure{
+		text-align: center;
+	}
+
+		#clientes .galeria figure figcaption{
+			color: darkgreen;
+		}
+
+.logosclientes{
+	height: 180px;
+	width: 180px;
+}		
+
+/* ----- PAGE CONTACTO ----- */
+.h1-page-contacto{
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-page-contacto{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+
+.formulario_page_contacto{
+	text-align: left;
+	width: 50%;
+	height: auto;
+	margin: 60px auto;
+	padding: 10px 20px;
+	border: double; black;
+	overflow-x: auto;
+}
+
+/* PRÁCTICA GRID
+BODY HOME HTML
+.grid{
+	display: grid;
+}
+
+.contenedor-home{
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "nav nav nav nav"
+						 "div div div div"
+						 "main main img img"
+						 "form form form form"
+						 "footer footer footer footer";
+}
+
+#menu{
+	grid-area: nav;
+}
+
+#banner{
+	grid-area: div;
+}
+
+#cuerpo{
+	grid-area: main;
+}
+
+#imagen-home{
+	grid-area: img;
+}
+
+#formulario{
+	grid-area: form;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+BODY NOSOTROS HTML
+.contenedor-nosotros{
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "nav2 nav2 nav2 nav2"
+						 "div2 div2 div2 div2 "
+						 "img2 img2 main2 main2 "
+						 "form2 form2 form2 form2"
+						 "footer2 footer2 footer2 footer2";
+}
+
+#menu-nosotros{
+	grid-area: nav2;
+}
+
+#banner-nosotros{
+	grid-area: div2;
+}
+
+#imagen-nosotros{
+	grid-area: img2;
+}
+
+
+#cuerpo-nosotros{
+	grid-area: main2;
+}
+
+#formulario-nosotros{
+	grid-area: form2;
+}
+
+#footer-nosotros{
+	grid-area: footer2;
+}
+
+
+BODY SERVICIOS HTML
+.contenedor-servicios{
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "nav3 nav3 nav3 nav3"
+						 "main3 main3 vid vid"
+						 "list list form3 form3"
+						 "footer3 footer3 footer3 footer3";
+}
+
+#menu-servicios{
+	grid-area: nav3;
+}
+
+#cuerpo-servicios{
+	grid-area: main3;
+}
+
+#lista-servicios{
+	grid-area: list;
+}
+
+#video-servicios{
+	grid-area: vid;
+}
+
+#formulario-servicios{
+	grid-area: form3;
+}
+
+#footer-servicios{
+	grid-area: footer3;
 }
 */
-
-.anim-rotate {
-  transform: rotate(20deg);
-}
