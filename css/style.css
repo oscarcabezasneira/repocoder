@@ -243,3 +243,14 @@ BODY SERVICIOS HTML
 	grid-area: footer3;
 }
 */
+
+/*PRÁCTICA SASS I (DESAFÍO)*/
+
+header {
+  background-color: yellow; }
+  header nav {
+    text-align: justify; }
+    header nav ul {
+      list-style-position: unset; }
+      header nav ul li {
+        list-style-type: none; }
