@@ -1,0 +1,9 @@
+// mixin
+
+@mixin texto($line-height){
+	line-height: $line-height;
+}
+
+h2, h3{
+	@include texto(1em)
+}

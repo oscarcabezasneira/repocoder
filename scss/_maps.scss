@@ -1,0 +1,12 @@
+// maps
+
+$paleta:(
+	'uno': white,
+	'dos': black,
+	'tres': darkseagreen,
+	'cuatro': darkgreen,
+	);
+
+.bg-footer{
+	background-color: map-get($map:$paleta, $key:'cuatro');
+}
